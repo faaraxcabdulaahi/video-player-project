@@ -1,0 +1,111 @@
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.video-player {
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 300px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 20px;
+}
+
+/* Video element styling */
+video {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Song info styling */
+.details {
+  margin-top: 10px;
+}
+
+#title {
+  font-size: 18px;
+  margin: 5px 0;
+}
+
+#artist {
+  font-size: 14px;
+  color: #777;
+}
+
+/* Progress bar */
+.progress-container {
+  background-color: #e0e0e0;
+  border-radius: 5px;
+  cursor: pointer;
+  height: 5px;
+  margin: 10px 0;
+  width: 100%;
+}
+
+.progress {
+  background-color: #4caf50;
+  border-radius: 5px;
+  height: 100%;
+  width: 0%;
+}
+
+/* Time display */
+.time-controls {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: #666;
+}
+
+/* Playback controls */
+.controls {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.control-btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  color: #4caf50;
+}
+
+.control-btn:focus {
+  outline: none;
+}
+
+.control-btn i {
+  pointer-events: none;
+}
+
+/* Additional controls for volume and speed */
+.additional-controls {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.volume-container,
+.speed-container {
+  display: flex;
+  align-items: center;
+}
+
+input[type="range"] {
+  margin-left: 10px;
+}
+
+select {
+  margin-left: 10px;
+}
